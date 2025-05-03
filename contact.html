@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charsie Booker">
+    <meta name="description" content="Contact Hermes Haven for inquiries and bookings.">
+    <meta name="keywords" content="Hermes Haven, contact, booking, inquiries, address, phone, email">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Contact Hermes Haven</title>
+   
+   <style>
+    :root {
+            --primary-color: #5cb85c; 
+            --primary-hover-color: #4cae4c;
+            --secondary-color: #333; 
+            --text-color: #333;
+            --light-text-color: #fff;
+            --background-color: #f4f4f4;
+            --border-color: #ccc;
+            --heading-color: #555;
+            --font-family-base: sans-serif, Arial, Helvetica;
+            --font-weight-bold: bold;
+            --border-radius: 4px;
+        }
+            body {
+                font-family: sans-serif,Arial,Helvetica;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+    
+            header {
+                background-color: #fff;
+                padding: 10px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+    
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 10px 0;
+            }
+    
+            nav ul li {
+                display: inline;
+                margin: 0 15px;
+            }
+    
+            nav a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+    
+            .hero-image {
+                width: 100%;
+                max-height: 300px;
+                overflow: hidden;
+            }
+    
+            .hero-image img {
+                width: 100%;
+                display: block;
+                object-fit: cover;
+            }
+    
+            main {
+                padding: 20px;
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 20px;
+                max-width: 960px;
+                margin: 20px auto;
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding-bottom: 90px; 
+}
+
+    
+            .contact-info {
+                text-align: left; 
+                margin-bottom: 20px;
+                padding-right: 0; 
+            }
+
+    
+            .contact-form {
+                padding-left: 20px;
+                border-left: 1px solid #ddd;
+            }
+            .contact-info img {
+                width: 100%; 
+                height: 70%;
+                margin-top: 20px;
+                display: block;
+            }
+    
+            h2 {
+                color: #555;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+    
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+                width: calc(100% - 12px);
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+    
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+    
+            button[type="submit"] {
+                background-color: #5cb85c;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 1em;
+            }
+    
+            button[type="submit"]:hover {
+                background-color: #4cae4c;
+            }
+    
+            .required::after {
+                content: " *";
+                color: red;
+            }
+    
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 2px 0;
+                font-size: 1.0em;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Hermes Haven Resort</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero-image">
+                <img src="swiss-valley.jpg" alt="Scenic Swiss Valley">
+            </div>
+        </header>
+    
+        <main>
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                <p class="required">Required fields marked with a </p>
+                <img src="swiss-peak.jpg" alt="Beautiful Swiss peak">
+            </div>
+            <div class="contact-form">
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                    <div>
+                        <label for="full-name" class="required">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="required">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="required">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div style="border: 1px solid #000000; padding: 05px; border-radius: 5px;">
+                        <label class="required">Preferred Contact Method</label>
+                        <div style="display: flex; gap: 20px; align-items: center; margin-top: 5px;">
+                            <div>
+                                <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                                <label for="contact-email">Email</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                                <label for="contact-phone">Phone</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comments" class="required">Comments</label>
+                        <textarea id="comments" name="comments" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    
+        <footer>
+            <p>Copyright ©2023 - Hermes Haven Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+    </html>
